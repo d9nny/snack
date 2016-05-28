@@ -1,0 +1,22 @@
+<nav class='navbar'>
+	<div class='container-fluid'>
+		<div class='navbar-header'>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+		</div>
+	</div>
+
+	<div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="nav navbar-nav">
+      {{#link-to 'home' tagName="li"}}<a href="">HOME</a>{{/link-to}}
+    	{{#link-to 'about' tagName='li'}}<a href=''>OUR STORY</a>{{/link-to}}
+      {{#link-to 'products' tagName='li'}}<a href=''>OUR SNACKS</a>{{/link-to}}
+    	{{#link-to 'contact' tagName='li'}}<a href=''>SAY HI</a>{{/link-to}}
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
