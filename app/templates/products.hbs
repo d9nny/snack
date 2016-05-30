@@ -1,1 +1,38 @@
-{{outlet}}
+<section>
+	<div class='container text-center'>
+		<h1>Our Snacks</h1>
+		<br/><br/>
+		
+		<h2>Snack Bags</h2>
+		<br/><br/>
+		<div class='container'>
+			{{#each model as |product|}}
+				{{#if product.isSnack}}
+					<div class='col-md-4'>
+						<img src="{{product.image}}">
+						<h3>{{product.name}}</h3>
+						<p>{{product.description}}</p>
+						<h4>£{{product.price}}</h4>
+						<button type='button' class='btn btn-xs'>ADD TO BASKET</button>
+					</div>
+				{{/if}}
+			{{/each}}
+		</div>
+
+		<h2>Sharing Bags</h2>
+		<br/><br/>	
+		<div class='container'>
+			{{#each model as |product|}}
+				{{#if product.isShare}}
+					<div class='col-md-4'>
+						<img src="{{product.image}}">
+						<h3>{{product.name}}</h3>
+						<p>{{product.description}}</p>
+						<h4>£{{product.price}}</h4>
+						<button type='button' class='btn btn-xs'>ADD TO BASKET</button>
+					</div>
+				{{/if}}
+			{{/each}}
+		</div>
+	</div>
+</section>
