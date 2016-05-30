@@ -1,1 +1,73 @@
-{{outlet}}
+<div class='container'>
+	<div class='row'>
+			
+			<h2>Get in Touch!</h2>
+
+			<section class='col-md-7'>
+
+				<br/><br/><br/><br/>
+
+				{{#if responseMessage}}
+
+					<div class='alert alert-success'>
+						<h4>Thank you! Your message has been sent.</h4>
+					</div>
+
+				{{else}}
+				
+					<p>If you have any questions about our snacks, we'd love to hear from you. 
+						 Fill out the form below and we'll get back to you as soon as possible.</p>
+
+					<br/>
+
+					<form>
+						<div class="form-group has-feedback {{if model.validEmail 'has-success'}}">
+							<label for='email'>Email</label>
+							{{input type='email' value=model.email class='form-control' id='email' placeholder='Email' autofocus='autofocus'}}
+							{{#if model.validEmail}}<span class='glyphicon glyphicon-ok form-control-feedback'></span>{{/if}}
+						</div>
+						<div class="form-group has-feedback {{if model.validMessage 'has-success'}}">
+							<label for='message'>Message</label>
+							{{textarea value=model.message class='form-control' id='message' placeholder='Message' rows='8'}}
+							{{#if model.validMessage}}<span class='glyphicon glyphicon-ok form-control-feedback'></span>{{/if}}
+						</div>
+					</form>
+					<button class='btn btn-success' disabled={{model.isDisabled}} {{action 'sendMessage' model}}>Send</button>
+
+				{{/if}}
+
+			</section>
+
+			<div class='col-md-2'></div>
+
+			<aside class='col-md-3'>
+
+				<br/><br/><br/><br/>
+	
+				<h4>Contact Details</h4>
+
+				<br/>
+
+				<div class='table-responsive'>
+					<table class='table table-sm'>
+						<tbody>
+							<tr>
+								<td>Telephone:</td>
+								<td class='text-right'>0207 5789 6789</td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td class='text-right'>hello@snacks.com</td>
+							</tr>
+							<tr>
+								<td>Address:</td>
+								<td class='text-right'>Snacks Ltd,<br/>507 London Street,<br/>London,<br/>EC1 4GY.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</aside>
+
+	</div>
+</div>
