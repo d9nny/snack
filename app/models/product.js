@@ -12,6 +12,6 @@ export default Model.extend({
 
 	isSnack: Ember.computed.equal('typeOf', 'snack'),
 
-	isShare: Ember.computed.not('isSnack')
+	isShare: Ember.computed.equal('typeOf', 'share')
 
 });
