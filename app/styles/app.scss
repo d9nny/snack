@@ -1,13 +1,73 @@
 @import "bootstrap";
 
+$textColour: #896A12;
+$brandFont: 'Amatic SC', cursive;
+$handWritten: 'Indie Flower', cursive;
+
+html {
+	body {
+		color: #454542;
+		font-family: 'Poiret One', cursive;
+
+		p {
+			font-size: 16px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
 nav {
-	margin-top: 20px;
+	padding: 20px 0;
+	background-color: cornsilk;
+	margin-bottom: 0px !important;
 
 	.navbar-header {
 		padding: 0 50px;
 
 		.navbar-brand {
-			font-size: 30px;
+			font-size: 45px;
+			color: $textColour;
+			font-family: $brandFont;
 		}
 	}
+
+	.navbar-nav {
+
+		a {
+			color: $textColour;
+			font-size: 18px;
+		}
+	}
+}
+
+h1 {
+	margin-top: 70px;
+}
+
+.jumbotron {
+	padding: 0;
+	background-color: white;
+
+	h3 {
+		font-family: $handWritten;
+	}
+
+	.container {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		.col-md-5 {
+			margin-top: 80px;
+		}
+	}
+
+	img {
+		height: 500px;
+	}
+}
+
+#logo {
+	font-family: $brandFont;
+	font-size: 40px;
 }

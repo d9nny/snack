@@ -4,8 +4,8 @@
 		<br/><br/>
 		
 		<h2>Snack Bags</h2>
-		<br/><br/>
-		<div class='container'>
+		<br/>
+		<div class='container text-center'>
 			{{#each model as |product|}}
 				{{#if product.isSnack}}
 					<div class='col-md-4'>
@@ -19,9 +19,11 @@
 			{{/each}}
 		</div>
 
+		<br/><br/>
+
 		<h2>Sharing Bags</h2>
-		<br/><br/>	
-		<div class='container'>
+		<br/>
+		<div class='container text-center'>
 			{{#each model as |product|}}
 				{{#if product.isShare}}
 					<div class='col-md-4'>

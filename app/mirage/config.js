@@ -7,9 +7,9 @@ export default function() {
         id:1,
         attributes: {
           name: "Mediterranean Snack Pop's",
-          typeOf: 'snack',
+          'type-of': 'snack',
           description: '',
-          price: 0.80,
+          price: 0.89,
           image: ''
         }
       }, {
@@ -17,9 +17,9 @@ export default function() {
         id:2,
         attributes: {
           name: "Spicy Snack Pop's",
-          typeOf: 'snack',
+          'type-of': 'snack',
           description: '',
-          price: 0.80,
+          price: 0.89,
           image: ''
         }
       }, {
@@ -27,9 +27,9 @@ export default function() {
         id:3,
         attributes: {
           name: "Lightly Salted Snack Pop's",
-          typeOf: 'snack',
+          'type-of': 'snack',
           description: '',
-          price: 0.80,
+          price: 0.89,
           image: ''
         }
       },{
@@ -37,7 +37,7 @@ export default function() {
         id:4,
         attributes: {
           name: "Mediterranean Snack Pop's",
-          typeOf: 'share',
+          'type-of': 'share',
           description: '',
           price: 1.99,
           image: ''
@@ -47,7 +47,7 @@ export default function() {
         id:5,
         attributes: {
           name: "Spicy Snack Pop's",
-          typeOf: 'share',
+          'type-of': 'share',
           description: '',
           price: 1.99,
           image: ''
@@ -57,7 +57,7 @@ export default function() {
         id:6,
         attributes: {
           name: "Lightly Salted Snack Pop's",
-          typeOf: 'share',
+          'type-of': 'share',
           description: '',
           price: 1.99,
           image: ''
