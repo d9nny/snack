@@ -13,7 +13,7 @@
 						<h3>{{product.name}}</h3>
 						<p>{{product.description}}</p>
 						<h4>£{{product.price}}</h4>
-						<button type='button' class='btn btn-xs'>ADD TO BASKET</button>
+						<button type='button' class='btn btn-xs' {{action 'addToCart' product}}>ADD TO BASKET</button>
 					</div>
 				{{/if}}
 			{{/each}}
@@ -31,7 +31,7 @@
 						<h3>{{product.name}}</h3>
 						<p>{{product.description}}</p>
 						<h4>£{{product.price}}</h4>
-						<button type='button' class='btn btn-xs'>ADD TO BASKET</button>
+						<button type='button' class='btn btn-xs' {{action 'addToCart' product}}>ADD TO BASKET</button>
 					</div>
 				{{/if}}
 			{{/each}}

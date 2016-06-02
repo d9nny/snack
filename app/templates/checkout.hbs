@@ -1,0 +1,14 @@
+<section>
+	<div class='container'>
+		<h1 class='text-center'>Checkout</h1>
+		<br/><br/>
+		<ul>
+		  {{#each shoppingCart.products as |product|}}
+		    <li>
+		      {{product.name}}
+		      <button {{action "removeFromCart" product}}>Remove</button>
+		    </li>
+		  {{/each}}
+		</ul>
+	</div>
+</section>
